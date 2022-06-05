@@ -80,8 +80,9 @@ ul {
 }
 
 .cardModal {
-  padding: 20px;
+  padding: 30px;
   background-color: white;
+  border-radius: 20px;
 }
 
 .hide {
@@ -96,4 +97,15 @@ ul {
 
 .cardButton:hover{
   opacity: 0.7;
+}
+
+
+.activityInput{
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.activityInput:focus{
+  outline: none;
+  border-color: #DF4FBF;
 }
