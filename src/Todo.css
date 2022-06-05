@@ -35,9 +35,9 @@ ul {
   font-size: 30px;
   padding: 15px 30px;
   margin-top: 15px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 10px;
-  color: #DF4FBF;
+  color: #df4fbf;
 }
 
 .card {
@@ -55,15 +55,14 @@ ul {
   height: 50px;
   font-size: 20px;
   border: none;
-  background-color: #DF4FBF;
+  background-color: #df4fbf;
   color: white;
   border-radius: 50%;
   cursor: pointer;
-
 }
 
-.addButton:hover{
-  background-color: #AF4297;
+.addButton:hover {
+  background-color: #af4297;
   transition-duration: 200ms;
 }
 
@@ -89,39 +88,52 @@ ul {
   display: none;
 }
 
-.cardButton{
+.cardButton {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.cardButton:hover{
+.cardButton:hover {
   opacity: 0.7;
 }
 
-
-.activityInput{
+.activityInput {
   border: 2px solid black;
   margin-right: 10px;
-  height:30px;
+  height: 30px;
   font-size: 16px;
 }
 
-.activityInput:focus{
+.activityInput:focus {
   outline: none;
-  border-color: #DF4FBF;
+  border-color: #df4fbf;
 }
 
-.activityButton{
+.activityButton {
   border: none;
-  background-color: #DF4FBF;
+  background-color: #df4fbf;
   padding: 10px 20px;
   color: white;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.activityButton:hover{
-  background-color: #AF4297;
+.activityButton:hover {
+  background-color: #af4297;
   transition-duration: 200ms;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 680px;
+  }
+  .imageChecklist {
+    width: 350px;
+  }
+
+  .item {
+    width: 92%;
+    padding: 10px 20px;
+  }
 }
