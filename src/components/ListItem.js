@@ -15,14 +15,14 @@ export default function ListItem(props) {
           <Card className={props.item.done ? "done item" : "item"}>
             {props.item.text}
             <div>
-              <button
+              <button className="cardButton"  
                 onClick={() => {
                   props.onDone(props.item);
                 }}
               >
                 <DoneImg done={props.item.done}></DoneImg>
               </button>
-              <button
+              <button className="cardButton"
                 onClick={() => {
                   props.onItemDeleted(props.item);
                 }}

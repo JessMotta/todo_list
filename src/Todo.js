@@ -5,10 +5,10 @@ import Item from "./components/Item";
 import "./Todo.css";
 import Modal from "./components/Modal";
 
-
 const SAVED_ITEMS = "savedItems";
 
 export default function Todo() {
+  const [showModal, setShowModal] = useState(false);
 
   const [items, setItems] = useState([]);
 
@@ -26,6 +26,7 @@ export default function Todo() {
   function onAddItem(text) {
     let item = new Item(text);
     setItems([...items, item]);
+    onHideModal();
   }
 
   function onItemDeleted(item) {
@@ -43,15 +44,34 @@ export default function Todo() {
     setItems(updatedItems);
   }
 
+  function onHideModal() {
+    setShowModal(false);
+  }
+
   return (
     <div className="container">
       <header className="header">
-      <h1>Todo</h1>
-      <button className="addButton">+</button>
+        <img
+          className="imageChecklist"
+          alt="imagem de uma menina marcando o checklist"
+          src="./assets/checklist_2.png"
+        ></img>
+        <div className="checklistInfo">
+          <h1>Olá, aqui você conseguirá organizar suas atividades diárias!</h1>
+          <button
+            onClick={() => {
+              setShowModal(true);
+            }}
+            className="addButton"
+          >
+            +
+          </button>
+        </div>
       </header>
-      <TodoForm onAddItem={onAddItem}></TodoForm>
       <List onDone={onDone} onItemDeleted={onItemDeleted} items={items}></List>
-      <Modal></Modal>
+      <Modal show={showModal} onHideModal={onHideModal}>
+        <TodoForm onAddItem={onAddItem}></TodoForm>
+      </Modal>
     </div>
   );
 }
