@@ -57,7 +57,7 @@ export default function Todo() {
           src="./assets/checklist_2.png"
         ></img>
         <div className="checklistInfo">
-          <h1>Olá, aqui você conseguirá organizar suas atividades diárias!</h1>
+          <h1>Aqui você conseguirá organizar suas atividades diárias! Vamos lá?!</h1>
           <button
             onClick={() => {
               setShowModal(true);

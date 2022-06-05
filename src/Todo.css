@@ -59,12 +59,12 @@ ul {
   color: white;
   border-radius: 50%;
   cursor: pointer;
-  transition-duration: 200ms;
 
 }
 
 .addButton:hover{
   background-color: #AF4297;
+  transition-duration: 200ms;
 }
 
 .modal {
@@ -103,9 +103,25 @@ ul {
 .activityInput{
   border: 2px solid black;
   margin-right: 10px;
+  height:30px;
+  font-size: 16px;
 }
 
 .activityInput:focus{
   outline: none;
   border-color: #DF4FBF;
+}
+
+.activityButton{
+  border: none;
+  background-color: #DF4FBF;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.activityButton:hover{
+  background-color: #AF4297;
+  transition-duration: 200ms;
 }

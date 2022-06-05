@@ -16,9 +16,9 @@ export default function TodoForm(props) {
     }
   }
   return (
-    <form className="activityForm">
+    <form>
       <input className="activityInput" onChange={handleChange} type="text" value={text}></input>
-      <button onClick={addItem}>Adicionar</button>
+      <button className="activityButton" onClick={addItem}>Adicionar</button>
 
       
     </form>
