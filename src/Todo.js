@@ -54,7 +54,7 @@ export default function Todo() {
         <img
           className="imageChecklist"
           alt="imagem de uma menina marcando o checklist"
-          src="./assets/checklist_2.png"
+          src="./assets/checklist.png"
         ></img>
         <div className="checklistInfo">
           <h1>Aqui você conseguirá organizar suas atividades diárias! Vamos lá?!</h1>
